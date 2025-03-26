@@ -29,11 +29,21 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".MapActivity" />
+        <activity
+            android:name=".MapActivity"
+            android:exported="false"/>
 
-        <activity android:name=".EnjoyActivity" />
+        <activity
+            android:name=".EnjoyActivity"
+            android:exported="false"/>
 
-        <activity android:name=".JokeActivity" />
+        <activity
+            android:name=".JokeActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".JokeListActivity"
+            android:exported="false"/>
 
     </application>
 </manifest>

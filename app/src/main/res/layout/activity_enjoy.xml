@@ -13,4 +13,12 @@
         android:text="Give me a joke"
         android:textSize="18sp"
         android:padding="20dp"/>
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Joke List"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"/>
 </LinearLayout>

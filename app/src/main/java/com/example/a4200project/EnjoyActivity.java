@@ -24,11 +24,11 @@ public class EnjoyActivity extends AppCompatActivity {
         setContentView(R.layout.activity_enjoy);
 
         Button btnJoke = findViewById(R.id.btnJoke);
-        btnJoke.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                fetchJoke();
-            }
+        Button btnList = findViewById(R.id.btnList);
+
+        btnJoke.setOnClickListener(v -> fetchJoke());
+        btnList.setOnClickListener(v -> {
+            startActivity(new Intent(EnjoyActivity.this, JokeListActivity.class));
         });
     }
 
