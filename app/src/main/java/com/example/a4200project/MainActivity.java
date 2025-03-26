@@ -31,12 +31,10 @@ public class MainActivity extends AppCompatActivity {
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
-        // Create LocationRequest
         locationRequest = new LocationRequest.Builder(Priority.PRIORITY_HIGH_ACCURACY, 10000)
                 .setMinUpdateIntervalMillis(5000)
                 .build();
 
-        // Initialize LocationCallback
         locationCallback = new LocationCallback() {
             @Override
             public void onLocationResult(LocationResult locationResult) {
@@ -44,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
                 if (locationResult != null) {
                     Location location = locationResult.getLastLocation();
                     if (location != null) {
-                        // Start MapActivity and stop updates
                         Intent intent = new Intent(MainActivity.this, MapActivity.class);
                         intent.putExtra("lat", location.getLatitude());
                         intent.putExtra("lng", location.getLongitude());
@@ -57,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
 
         Button btn = findViewById(R.id.btnFindWashroom);
         btn.setOnClickListener(v -> checkLocationPermission());
+
+        Button btnEnjoy = findViewById(R.id.btnEnjoy);
+        btnEnjoy.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, EnjoyActivity.class));
+        });
     }
 
     private void checkLocationPermission() {

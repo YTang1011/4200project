@@ -15,4 +15,12 @@
         android:textSize="18sp"
         android:padding="20dp"/>
 
+    <Button
+        android:id="@+id/btnEnjoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am enjoying..."
+        android:textSize="18sp"
+        android:padding="20dp"/>
+
 </LinearLayout>
