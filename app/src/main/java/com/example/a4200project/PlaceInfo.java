@@ -3,16 +3,34 @@ package com.example.a4200project;
 public class PlaceInfo {
     private final String name;
     private final String address;
+    private final String placeId;
     private String openingHours;
 
-    public PlaceInfo(String name, String address) {
+    public PlaceInfo(String name, String address, String placeId) {
         this.name = name;
         this.address = address;
-        this.openingHours = null;
+        this.placeId = placeId;
     }
 
-    public String getName() { return name; }
-    public String getAddress() { return address; }
-    public String getOpeningHours() { return openingHours; }
-    public void setOpeningHours(String openingHours) { this.openingHours = openingHours; }
+    // Getter methods
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getPlaceId() {
+        return placeId;
+    }
+
+    public String getOpeningHours() {
+        return openingHours;
+    }
+
+    // Setter for opening hours
+    public void setOpeningHours(String openingHours) {
+        this.openingHours = openingHours;
+    }
 }

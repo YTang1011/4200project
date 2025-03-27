@@ -28,4 +28,60 @@
         android:textSize="14sp"
         android:textStyle="italic"/>
 
+    <!-- Rating Buttons Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnFriendly"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Friendly"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnNotFriendly"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Not Friendly"
+            android:layout_marginStart="4dp"/>
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset My Vote"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+    <!-- Rating Counters Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/tvFriendlyCount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Friendly: 0"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvNotFriendlyCount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Not Friendly: 0"
+            android:gravity="center"/>
+    </LinearLayout>
 </LinearLayout>
