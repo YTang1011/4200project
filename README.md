@@ -1,6 +1,6 @@
 Hello,
 
-the lastest branch is database_firebase, plz make sure you download it for full features
+This branch is latest version, plz make sure you download it for full features
 
 In order to run it, plz obtain a google map api key from google cloud console
 
